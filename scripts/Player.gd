@@ -6,8 +6,6 @@ var planets = []
 func _fixed_process(delta):
 	var force = Vector2()
 	#TEMP
-	planets.append(get_node("../Planet"))
-	planets.append(get_node("../Planet1"))
 	
 	for p in planets:
 		var distance = p.get_pos().distance_squared_to(get_pos())
@@ -29,7 +27,7 @@ func _fixed_process(delta):
 #
 #
 #	velocity += delta * v * 3
-	velocity += force * delta
+	velocity += force * delta * 100
 	var motion = velocity * delta
 	set_rot( force.atan2() )
 	move( motion )  
@@ -41,4 +39,6 @@ func _fixed_process(delta):
 		move( motion * 0.5 )
 
 func _ready():
-    set_fixed_process(true)
+	planets.append(get_node("../Planet"))
+	planets.append(get_node("../Planet1"))
+	set_fixed_process(true)
