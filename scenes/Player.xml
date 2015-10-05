@@ -3,7 +3,7 @@
 	<ext_resource path="res://textures/happy_space_square.png" type="Texture" index="0"></ext_resource>
 	<resource type="CircleShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
-		<real name="radius"> 17.521175 </real>
+		<real name="radius"> 16.3041 </real>
 
 	</resource>
 	<main_resource>
@@ -39,7 +39,7 @@
 			<array  len="8" shared="false">
 				<bool> False </bool>
 				<resource  resource_type="Shape2D" path="local://1">  </resource>
-				<matrix32> 1, -0, 0, 1, 0, 0 </matrix32>
+				<matrix32> 1, 0, 0, 1, 0, 0 </matrix32>
 				<int> 1 </int>
 				<real> 0.08 </real>
 				<dictionary  shared="false">
