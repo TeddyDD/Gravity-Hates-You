@@ -10,3 +10,7 @@ func _ready():
 		radius = get_scale().x * radius
 		prints(radius)
 	get_node("../Player").planets.append(self)
+	
+func get_scale( radius ):
+	var factor = 160 / radius
+	return Vector2(factor, factor)
