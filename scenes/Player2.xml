@@ -14,7 +14,7 @@
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 			<string> "names" </string>
-			<string_array  len="17">
+			<string_array  len="37">
 				<string> "Player" </string>
 				<string> "KinematicBody2D" </string>
 				<string> "input/pickable" </string>
@@ -26,6 +26,26 @@
 				<string> "collision/margin" </string>
 				<string> "script/script" </string>
 				<string> "__meta__" </string>
+				<string> "Particles2D" </string>
+				<string> "config/amount" </string>
+				<string> "config/lifetime" </string>
+				<string> "config/local_space" </string>
+				<string> "params/direction" </string>
+				<string> "params/spread" </string>
+				<string> "params/linear_velocity" </string>
+				<string> "params/spin_velocity" </string>
+				<string> "params/orbit_velocity" </string>
+				<string> "params/gravity_direction" </string>
+				<string> "params/gravity_strength" </string>
+				<string> "params/radial_accel" </string>
+				<string> "params/tangential_accel" </string>
+				<string> "params/damping" </string>
+				<string> "params/initial_angle" </string>
+				<string> "params/initial_size" </string>
+				<string> "params/final_size" </string>
+				<string> "params/hue_variation" </string>
+				<string> "params/anim_speed_scale" </string>
+				<string> "params/anim_initial_pos" </string>
 				<string> "Sprite" </string>
 				<string> "texture" </string>
 				<string> "CollisionShape2D" </string>
@@ -34,11 +54,11 @@
 				<string> "_update_shape_index" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 3 </int>
+			<int> 4 </int>
 			<string> "nodes" </string>
-			<int_array  len="47"> 				-1, -1, 1, 0, -1, 9, 2, 0, 3, 1, 4, 2, 5, 0, 6, 3, 7, 3, 8, 4, 9, 5, 10, 6, 0, 0, 0, 11, 11, -1, 1, 12, 7, 0, 0, 0, 13, 13, -1, 3, 14, 1, 15, 0, 16, 8, 0 </int_array>
+			<int_array  len="92"> 				-1, -1, 1, 0, -1, 9, 2, 0, 3, 1, 4, 2, 5, 0, 6, 3, 7, 3, 8, 4, 9, 5, 10, 6, 0, 0, 0, 11, 11, -1, 19, 12, 7, 13, 8, 14, 0, 15, 9, 16, 9, 17, 10, 18, 9, 19, 9, 20, 9, 21, 11, 22, 9, 23, 9, 24, 9, 25, 9, 26, 8, 27, 8, 28, 9, 29, 8, 30, 9, 0, 0, 0, 31, 31, -1, 1, 32, 12, 0, 0, 0, 33, 33, -1, 3, 34, 1, 35, 0, 36, 13, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="9" shared="false">
+			<array  len="14" shared="false">
 				<bool> False </bool>
 				<resource  resource_type="Shape2D" path="local://1">  </resource>
 				<matrix32> 1, 0, 0, 1, 0, 0 </matrix32>
@@ -53,7 +73,7 @@
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> -107.677, -49.4412 </vector2>
+							<vector2> -149.324, -80.2353 </vector2>
 							<string> "snap_grid" </string>
 							<bool> False </bool>
 							<string> "snap_offset" </string>
@@ -73,7 +93,7 @@
 							<string> "snap_step" </string>
 							<vector2> 10, 10 </vector2>
 							<string> "zoom" </string>
-							<real> 5.162316 </real>
+							<real> 3.424786 </real>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -181,6 +201,11 @@
 						<int> 0 </int>
 					</dictionary>
 				</dictionary>
+				<int> 48 </int>
+				<real> 1 </real>
+				<real> 0 </real>
+				<real> 20 </real>
+				<real> 9.8 </real>
 				<resource  external="1">  </resource>
 				<int> 0 </int>
 			</array>

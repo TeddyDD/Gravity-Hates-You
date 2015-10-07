@@ -9,8 +9,9 @@ func _ready():
 	if get_scale() != Vector2(1,1):
 		radius = get_scale().x * radius
 		prints(radius)
+		mass = get_scale().x * mass
 	get_node("../Player").planets.append(self)
 	
-func get_scale( radius ):
+func get_scale_by_radius( radius ):
 	var factor = 160 / radius
 	return Vector2(factor, factor)
