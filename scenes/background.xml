@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="3" version="2.0" version_name="Godot Engine v2.0.alpha.custom_build">
-	<ext_resource path="res://textures/stars.png" type="Texture" index="1"></ext_resource>
 	<ext_resource path="res://textures/sky.png" type="Texture" index="0"></ext_resource>
+	<ext_resource path="res://textures/stars.png" type="Texture" index="1"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>
@@ -58,7 +58,7 @@
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> -2974.07, -1801.23 </vector2>
+							<vector2> -2974.09, -1801.23 </vector2>
 							<string> "snap_grid" </string>
 							<bool> False </bool>
 							<string> "snap_offset" </string>
@@ -195,7 +195,7 @@
 				<bool> True </bool>
 				<vector2> 1582.07, -597.921 </vector2>
 				<vector2> -17.9338, -597.921 </vector2>
-				<vector2> 0.5, 0.5 </vector2>
+				<vector2> 0.3, 0.3 </vector2>
 				<vector2> 11.4399, -601.231 </vector2>
 				<resource  external="1">  </resource>
 				<rect2> 0, 135, 1271, 1059 </rect2>

@@ -47,6 +47,7 @@ func _fixed_process(delta):
 		#jump
 		if Input.is_action_pressed("ui_select"):
 			velocity += -force * 200
+			get_node("blast").set_emitting( true )
 		#no input but coliding
 		if not is_input:
 			animation.play("idle")
