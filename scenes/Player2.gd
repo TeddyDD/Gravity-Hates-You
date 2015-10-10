@@ -7,7 +7,6 @@ var h_vel = Vector2()
 
 func _fixed_process(delta):
 	var force = Vector2()
-	#TEMP
 	if planets != []:
 		for p in planets:
 			var distance = p.get_pos().distance_squared_to(get_pos())
