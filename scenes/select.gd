@@ -15,3 +15,7 @@ func _ready():
 
 func _on_Button_pressed():
 	get_tree().change_scene( "res://scenes/menu.xml" )
+
+
+func _on_ItemList_item_activated( index ):
+	get_tree().change_scene( global.level_data[index].file )

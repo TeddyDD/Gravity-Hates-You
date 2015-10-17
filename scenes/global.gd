@@ -11,24 +11,28 @@ func _ready():
 	pass
 
 func finish(state, time):
+	load_level_data()
 	#if reset then reload
 	if state == "reset":
 		get_tree().change_scene(current_level)
 	#if esc then load menu / level menu #TODO
 	if state == "menu":
-		get_tree().change_scene("res://scenes/menu.xml")
+		get_tree().change_scene("res://scenes/select.xml")
 	
 	#if finished then save score and load next level
 	if state == "finish":
 		var file = ConfigFile.new()
 		var err = file.load( "user://save.bin" )
-		for l in level_data:
-			prints(l.name, "SAVE")
-			if l.file == current_level:
-				file.set_value( l.name, "time", time )
-				load_level_data()
+		var l = get_current_level_data()
+		file.set_value( l.name, "time", time )
+		load_level_data()
 		err = file.save( "user://save.bin" )
 	pass
+	
+func get_current_level_data():
+	for l in level_data:
+			if l.file == current_level:
+				return l
 
 func load_level_data():
 

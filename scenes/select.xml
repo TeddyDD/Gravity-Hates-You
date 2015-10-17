@@ -5,11 +5,11 @@
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>
-			<int> 1 </int>
+			<int> 2 </int>
 			<string> "conns" </string>
-			<int_array  len="6"> 				2, 0, 22, 21, 2, 0 </int_array>
+			<int_array  len="12"> 				1, 0, 22, 21, 2, 0, 2, 0, 24, 23, 2, 0 </int_array>
 			<string> "names" </string>
-			<string_array  len="23">
+			<string_array  len="25">
 				<string> "Node2D" </string>
 				<string> "script/script" </string>
 				<string> "__meta__" </string>
@@ -31,6 +31,8 @@
 				<string> "toggle_mode" </string>
 				<string> "text" </string>
 				<string> "flat" </string>
+				<string> "_on_ItemList_item_activated" </string>
+				<string> "item_activated" </string>
 				<string> "_on_Button_pressed" </string>
 				<string> "pressed" </string>
 			</string_array>

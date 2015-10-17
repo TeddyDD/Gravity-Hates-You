@@ -6,7 +6,11 @@ extends Node2D
 # var b="textvar"
 
 func _ready():
-	pass
+	set_process( true )
+	
+func _process(delta):
+	if Input.is_action_pressed("ui_select") or Input.is_action_pressed("ui_accept"):
+		to_menu()
 
 func to_menu():
 	get_tree().change_scene( "res://scenes/menu.xml" )

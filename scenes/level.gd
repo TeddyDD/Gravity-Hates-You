@@ -35,9 +35,16 @@ func _process(delta):
 	
 func finish():
 	finished = true
-	get_node("hud/finished").show()
-	global.finish("finish", time)
-
+	var l = global.get_current_level_data()
+	if  l.time != null and time < l.time:
+		global.finish("finish", time)
+		get_node("hud/finished").show()
+	elif l.time == null:
+		global.finish("finish", time)
+		get_node("hud/finished").show()
+	else:
+		get_node("hud/not_record").show()
+		
 #func set_stars(newvalue):
 #	stars = newvalue
 #	stars_label.set_text( stars )
