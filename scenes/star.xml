@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="6" version="2.0" version_name="Godot Engine v2.0.alpha.custom_build">
-	<ext_resource path="res://scenes/flag.gd" type="Script" index="0"></ext_resource>
+	<ext_resource path="res://scenes/star.gd" type="Script" index="0"></ext_resource>
 	<ext_resource path="res://textures/star.png" type="Texture" index="1"></ext_resource>
 	<resource type="RectangleShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
@@ -52,7 +52,7 @@
 			</array>
 		</dictionary>
 		<string name="tracks/1/type"> "method" </string>
-		<node_path name="tracks/1/path"> "queue_free" </node_path>
+		<node_path name="tracks/1/path"> "." </node_path>
 		<int name="tracks/1/interp"> 1 </int>
 		<dictionary name="tracks/1/keys" shared="false">
 			<string> "times" </string>
@@ -70,6 +70,37 @@
 				</dictionary>
 			</array>
 		</dictionary>
+		<string name="tracks/2/type"> "value" </string>
+		<node_path name="tracks/2/path"> "Sprite:transform/rot" </node_path>
+		<int name="tracks/2/interp"> 1 </int>
+		<dictionary name="tracks/2/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 1 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<real> 0 </real>
+				<real> -360 </real>
+			</array>
+		</dictionary>
+		<string name="tracks/3/type"> "value" </string>
+		<node_path name="tracks/3/path"> "Particles2D:config/emitting" </node_path>
+		<int name="tracks/3/interp"> 1 </int>
+		<dictionary name="tracks/3/keys" shared="false">
+			<string> "cont" </string>
+			<bool> False </bool>
+			<string> "times" </string>
+			<real_array  len="1"> 				0 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="1"> 				1 </real_array>
+			<string> "values" </string>
+			<array  len="1" shared="false">
+				<bool> True </bool>
+			</array>
+		</dictionary>
 
 	</resource>
 	<main_resource>
@@ -77,11 +108,12 @@
 			<string> "conn_count" </string>
 			<int> 1 </int>
 			<string> "conns" </string>
-			<int_array  len="6"> 				0, 0, 33, 32, 2, 0 </int_array>
+			<int_array  len="6"> 				0, 0, 61, 60, 2, 0 </int_array>
 			<string> "names" </string>
-			<string_array  len="34">
-				<string> "Flag" </string>
+			<string_array  len="62">
+				<string> "Star" </string>
 				<string> "Area2D" </string>
+				<string> "transform/pos" </string>
 				<string> "input/pickable" </string>
 				<string> "shapes/0/shape" </string>
 				<string> "shapes/0/transform" </string>
@@ -92,8 +124,35 @@
 				<string> "angular_damp" </string>
 				<string> "script/script" </string>
 				<string> "__meta__" </string>
+				<string> "star" </string>
+				<string> "Particles2D" </string>
+				<string> "config/amount" </string>
+				<string> "config/lifetime" </string>
+				<string> "config/emit_timeout" </string>
+				<string> "config/emitting" </string>
+				<string> "config/local_space" </string>
+				<string> "params/direction" </string>
+				<string> "params/spread" </string>
+				<string> "params/linear_velocity" </string>
+				<string> "params/spin_velocity" </string>
+				<string> "params/orbit_velocity" </string>
+				<string> "params/gravity_direction" </string>
+				<string> "params/gravity_strength" </string>
+				<string> "params/radial_accel" </string>
+				<string> "params/tangential_accel" </string>
+				<string> "params/damping" </string>
+				<string> "params/initial_angle" </string>
+				<string> "params/initial_size" </string>
+				<string> "params/final_size" </string>
+				<string> "params/hue_variation" </string>
+				<string> "params/anim_speed_scale" </string>
+				<string> "params/anim_initial_pos" </string>
+				<string> "randomness/spread" </string>
+				<string> "randomness/linear_velocity" </string>
+				<string> "randomness/spin_velocity" </string>
+				<string> "randomness/hue_variation" </string>
+				<string> "color/color" </string>
 				<string> "Sprite" </string>
-				<string> "transform/rot" </string>
 				<string> "texture" </string>
 				<string> "CollisionShape2D" </string>
 				<string> "visibility/visible" </string>
@@ -116,11 +175,12 @@
 				<string> "body_enter" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 4 </int>
+			<int> 5 </int>
 			<string> "nodes" </string>
-			<int_array  len="80"> 				-1, -1, 1, 0, -1, 10, 2, 0, 3, 1, 4, 2, 5, 3, 6, 4, 7, 5, 8, 6, 9, 7, 10, 8, 11, 9, 0, 0, 0, 12, 12, -1, 2, 13, 10, 14, 11, 0, 0, 0, 15, 15, -1, 5, 16, 3, 17, 12, 18, 1, 19, 3, 20, 13, 0, 0, 0, 22, 21, -1, 9, 23, 14, 24, 15, 25, 16, 26, 17, 27, 18, 28, 0, 29, 7, 30, 19, 31, 20, 0 </int_array>
+			<int_array  len="140"> 				-1, -1, 1, 0, -1, 11, 2, 0, 3, 1, 4, 2, 5, 3, 6, 4, 7, 5, 8, 6, 9, 7, 10, 8, 11, 9, 12, 10, 1, 13, 0, 0, 14, 14, -1, 26, 15, 11, 16, 12, 17, 12, 18, 4, 19, 4, 20, 13, 21, 14, 22, 15, 23, 13, 24, 13, 25, 13, 26, 16, 27, 13, 28, 17, 29, 13, 30, 13, 31, 18, 32, 8, 33, 13, 34, 8, 35, 13, 36, 19, 37, 8, 38, 20, 39, 7, 40, 21, 0, 0, 0, 41, 41, -1, 1, 42, 22, 0, 0, 0, 43, 43, -1, 5, 44, 4, 45, 23, 46, 2, 47, 4, 48, 24, 0, 0, 0, 50, 49, -1, 9, 51, 25, 52, 13, 53, 26, 54, 27, 55, 28, 56, 1, 57, 8, 58, 29, 59, 30, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="21" shared="false">
+			<array  len="31" shared="false">
+				<vector2> -0.475655, 0 </vector2>
 				<bool> True </bool>
 				<resource  resource_type="Shape2D" path="local://1">  </resource>
 				<matrix32> 2.40364, -0, 0, 2.40364, 0, 0 </matrix32>
@@ -132,13 +192,13 @@
 				<resource  external="0">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
-					<string> "2D" </string>
+					<string> "Script" </string>
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> -98.3682, -48.7909 </vector2>
+							<vector2> -197.258, -73.4045 </vector2>
 							<string> "snap_grid" </string>
 							<bool> False </bool>
 							<string> "snap_offset" </string>
@@ -158,7 +218,7 @@
 							<string> "snap_step" </string>
 							<vector2> 10, 10 </vector2>
 							<string> "zoom" </string>
-							<real> 4.204742 </real>
+							<real> 3.090872 </real>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -254,14 +314,8 @@
 						</dictionary>
 						<string> "Anim" </string>
 						<dictionary  shared="false">
-							<string> "animation" </string>
-							<string> "normal" </string>
-							<string> "editing" </string>
-							<bool> True </bool>
-							<string> "player" </string>
-							<node_path> "anim" </node_path>
 							<string> "visible" </string>
-							<bool> True </bool>
+							<bool> False </bool>
 						</dictionary>
 					</dictionary>
 					<string> "__editor_run_settings__" </string>
@@ -272,12 +326,21 @@
 						<int> 0 </int>
 					</dictionary>
 				</dictionary>
-				<real> -346.222748 </real>
+				<int> 64 </int>
+				<real> 0.6 </real>
+				<real> 0 </real>
+				<real> 180 </real>
+				<real> 52.360001 </real>
+				<real> 9.8 </real>
+				<real> 0.11 </real>
+				<real> 2.48 </real>
+				<real> 0.18 </real>
+				<real> 0.38 </real>
+				<color> 1, 0.952247, 0.266254, 1 </color>
 				<resource  external="1">  </resource>
 				<vector2> 2.40364, 2.40364 </vector2>
 				<int> 0 </int>
 				<int> 1 </int>
-				<real> 0 </real>
 				<node_path> ".." </node_path>
 				<resource  resource_type="Animation" path="local://3">  </resource>
 				<resource  resource_type="Animation" path="local://2">  </resource>

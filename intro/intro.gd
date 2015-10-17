@@ -6,9 +6,7 @@ extends Node2D
 # var b="textvar"
 
 func _ready():
-	# Initialization here
 	pass
 
 func to_menu():
 	get_tree().change_scene( "res://scenes/menu.xml" )
-

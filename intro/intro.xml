@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="8" version="2.0" version_name="Godot Engine v2.0.alpha.custom_build">
-	<ext_resource path="res://intro/project.png" type="Texture" index="2"></ext_resource>
-	<ext_resource path="res://intro/2015.png" type="Texture" index="3"></ext_resource>
-	<ext_resource path="res://intro/white.png" type="Texture" index="1"></ext_resource>
-	<ext_resource path="res://intro/week1.png" type="Texture" index="4"></ext_resource>
 	<ext_resource path="res://intro/intro.gd" type="Script" index="0"></ext_resource>
 	<ext_resource path="res://intro/Godot_logo.jpg" type="Texture" index="5"></ext_resource>
+	<ext_resource path="res://intro/2015.png" type="Texture" index="3"></ext_resource>
+	<ext_resource path="res://intro/project.png" type="Texture" index="2"></ext_resource>
+	<ext_resource path="res://intro/week1.png" type="Texture" index="4"></ext_resource>
+	<ext_resource path="res://intro/white.png" type="Texture" index="1"></ext_resource>
 	<resource type="Animation" path="local://1">
 		<string name="resource/name"> "intro" </string>
 		<real name="length"> 6 </real>
@@ -156,7 +156,7 @@
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> -14.4233, 8.53468 </vector2>
+							<vector2> -832, -465.99 </vector2>
 							<string> "snap_grid" </string>
 							<bool> False </bool>
 							<string> "snap_offset" </string>
@@ -176,7 +176,7 @@
 							<string> "snap_step" </string>
 							<vector2> 10, 10 </vector2>
 							<string> "zoom" </string>
-							<real> 0.999999 </real>
+							<real> 0.440126 </real>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -275,7 +275,7 @@
 							<string> "animation" </string>
 							<string> "intro" </string>
 							<string> "editing" </string>
-							<bool> True </bool>
+							<bool> False </bool>
 							<string> "player" </string>
 							<node_path> "AnimationPlayer" </node_path>
 							<string> "visible" </string>

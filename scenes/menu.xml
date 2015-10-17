@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="3" version="2.0" version_name="Godot Engine v2.0.alpha.custom_build">
-	<ext_resource path="res://fonts/NESCyrillic.fnt" type="Font" index="1"></ext_resource>
-	<ext_resource path="res://textures/Menu.png" type="Texture" index="0"></ext_resource>
+<resource_file type="PackedScene" subresource_count="4" version="2.0" version_name="Godot Engine v2.0.alpha.custom_build">
+	<ext_resource path="res://fonts/NESCyrillic.fnt" type="Font" index="2"></ext_resource>
+	<ext_resource path="res://scenes/menu.gd" type="Script" index="0"></ext_resource>
+	<ext_resource path="res://textures/Menu.png" type="Texture" index="1"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>
-			<int> 0 </int>
+			<int> 3 </int>
 			<string> "conns" </string>
-			<int_array  len="0"> 				 </int_array>
+			<int_array  len="18"> 				2, 0, 46, 45, 2, 0, 3, 0, 46, 47, 2, 0, 4, 0, 46, 48, 2, 0 </int_array>
 			<string> "names" </string>
-			<string_array  len="20">
+			<string_array  len="49">
 				<string> "Node2D" </string>
+				<string> "script/script" </string>
 				<string> "__meta__" </string>
 				<string> "TextureFrame" </string>
 				<string> "margin/right" </string>
@@ -30,13 +32,42 @@
 				<string> "flat" </string>
 				<string> "credits" </string>
 				<string> "exit" </string>
+				<string> "credits_window" </string>
+				<string> "AcceptDialog" </string>
+				<string> "popup/exclusive" </string>
+				<string> "window/title" </string>
+				<string> "ScrollContainer" </string>
+				<string> "anchor/right" </string>
+				<string> "anchor/bottom" </string>
+				<string> "scroll/horizontal" </string>
+				<string> "scroll/vertical" </string>
+				<string> "txt" </string>
+				<string> "Label" </string>
+				<string> "autowrap" </string>
+				<string> "percent_visible" </string>
+				<string> "lines_skipped" </string>
+				<string> "max_lines_visible" </string>
+				<string> "VScrollBar" </string>
+				<string> "range/min" </string>
+				<string> "range/max" </string>
+				<string> "range/step" </string>
+				<string> "range/page" </string>
+				<string> "range/value" </string>
+				<string> "range/exp_edit" </string>
+				<string> "rounded_values" </string>
+				<string> "custom_step" </string>
+				<string> "_on_select_pressed" </string>
+				<string> "pressed" </string>
+				<string> "_on_credits_pressed" </string>
+				<string> "_on_exit_pressed" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 5 </int>
+			<int> 9 </int>
 			<string> "nodes" </string>
-			<int_array  len="131"> 				-1, -1, 0, 0, -1, 1, 1, 0, 0, 0, 0, 2, 2, -1, 8, 3, 1, 4, 1, 5, 2, 6, 2, 7, 3, 8, 3, 9, 4, 1, 5, 0, 0, 0, 11, 10, -1, 13, 12, 6, 13, 7, 3, 8, 4, 9, 5, 10, 6, 2, 7, 3, 8, 3, 14, 11, 15, 10, 16, 12, 17, 10, 1, 13, 0, 0, 0, 11, 18, -1, 13, 12, 6, 13, 14, 3, 8, 4, 15, 5, 10, 6, 2, 7, 3, 8, 3, 14, 11, 15, 10, 16, 16, 17, 10, 1, 17, 0, 0, 0, 11, 19, -1, 13, 12, 6, 13, 18, 3, 8, 4, 19, 5, 10, 6, 2, 7, 3, 8, 3, 14, 11, 15, 10, 16, 20, 17, 10, 1, 21, 0 </int_array>
+			<int_array  len="257"> 				-1, -1, 0, 0, -1, 2, 1, 0, 2, 1, 0, 0, 0, 3, 3, -1, 8, 4, 2, 5, 2, 6, 3, 7, 3, 8, 4, 9, 4, 10, 5, 2, 6, 0, 0, 0, 12, 11, -1, 13, 13, 7, 14, 8, 4, 9, 5, 10, 6, 11, 7, 3, 8, 4, 9, 4, 15, 12, 16, 11, 17, 13, 18, 11, 2, 14, 0, 0, 0, 12, 19, -1, 13, 13, 7, 14, 15, 4, 9, 5, 16, 6, 11, 7, 3, 8, 4, 9, 4, 15, 12, 16, 11, 17, 17, 18, 11, 2, 18, 0, 0, 0, 12, 20, -1, 13, 13, 7, 14, 19, 4, 9, 5, 20, 6, 11, 7, 3, 8, 4, 9, 4, 15, 12, 16, 11, 17, 21, 18, 11, 2, 22, 0, 0, 0, 22, 21, -1, 11, 13, 23, 14, 24, 4, 25, 5, 26, 6, 11, 7, 11, 8, 4, 9, 4, 23, 3, 24, 17, 2, 27, 0, 5, 0, 25, 25, -1, 13, 26, 28, 27, 28, 13, 29, 14, 29, 4, 29, 5, 30, 6, 11, 7, 3, 8, 4, 9, 4, 28, 3, 29, 3, 2, 31, 0, 6, 0, 31, 30, -1, 11, 4, 32, 5, 32, 6, 3, 7, 3, 8, 4, 15, 12, 17, 33, 32, 3, 33, 32, 34, 34, 35, 35, 0, 6, 0, 36, 36, -1, 13, 4, 36, 5, 36, 6, 11, 7, 3, 9, 4, 37, 37, 38, 30, 39, 32, 40, 37, 41, 32, 42, 11, 43, 11, 44, 38, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="22" shared="false">
+			<array  len="39" shared="false">
+				<resource  external="0">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
 					<string> "2D" </string>
@@ -45,7 +76,7 @@
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> -75.831, 136.556 </vector2>
+							<vector2> -533.738, -212.953 </vector2>
 							<string> "snap_grid" </string>
 							<bool> False </bool>
 							<string> "snap_offset" </string>
@@ -65,7 +96,7 @@
 							<string> "snap_step" </string>
 							<vector2> 10, 10 </vector2>
 							<string> "zoom" </string>
-							<real> 0.814507 </real>
+							<real> 0.663421 </real>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -176,7 +207,7 @@
 				<real> 40 </real>
 				<bool> True </bool>
 				<int> 2 </int>
-				<resource  external="0">  </resource>
+				<resource  external="1">  </resource>
 				<dictionary  shared="false">
 					<string> "_edit_lock_" </string>
 					<bool> True </bool>
@@ -186,7 +217,7 @@
 				<real> 785 </real>
 				<real> 384 </real>
 				<bool> False </bool>
-				<resource  external="1">  </resource>
+				<resource  external="2">  </resource>
 				<string> "Select Level" </string>
 				<dictionary  shared="false">
 					<string> "_edit_lock_" </string>
@@ -206,6 +237,28 @@
 					<string> "_edit_lock_" </string>
 					<bool> True </bool>
 				</dictionary>
+				<real> 16 </real>
+				<real> 33 </real>
+				<real> 768 </real>
+				<real> 580 </real>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<int> 1 </int>
+				<real> 10 </real>
+				<real> 100 </real>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<real> 1 </real>
+				<string> "Copyright (c) 2015 Daniel Lewan - TeddyDD&#000a;&#000a;Permission is hereby granted, free of charge, to any person obtaining a copy&#000a;of this software and associated documentation files (the &quot;Software&quot;), to deal&#000a;in the Software without restriction, including without limitation the rights&#000a;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&#000a;copies of the Software, and to permit persons to whom the Software is&#000a;furnished to do so, subject to the following conditions:&#000a;&#000a;The above copyright notice and this permission notice shall be included in&#000a;all copies or substantial portions of the Software.&#000a;&#000a;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#000a;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#000a;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&#000a;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#000a;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#000a;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN&#000a;THE SOFTWARE.&#000a;&#000a;All graphics was made by my awesome girlfriend - Katarzyna &quot;Kyasarinn&quot; Hojka&quot;&#000a;" </string>
+				<int> 0 </int>
+				<int> -1 </int>
+				<real> 8 </real>
+				<real> 0 </real>
+				<real> -1 </real>
 			</array>
 			<string> "version" </string>
 			<int> 1 </int>
