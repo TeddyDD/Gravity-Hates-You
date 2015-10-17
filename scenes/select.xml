@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="3" version="2.0" version_name="Godot Engine v2.0.alpha.custom_build">
+<resource_file type="PackedScene" subresource_count="4" version="2.0" version_name="Godot Engine v2.0.alpha.custom_build">
 	<ext_resource path="res://scenes/select.gd" type="Script" index="0"></ext_resource>
 	<ext_resource path="res://fonts/NESCyrillic.fnt" type="Font" index="1"></ext_resource>
+	<ext_resource path="res://sounds/Reformat.ogg" type="AudioStream" index="2"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>
-			<int> 3 </int>
+			<int> 2 </int>
 			<string> "conns" </string>
-			<int_array  len="18"> 				1, 0, 22, 21, 2, 0, 1, 0, 24, 23, 2, 0, 2, 0, 26, 25, 2, 0 </int_array>
+			<int_array  len="12"> 				1, 0, 38, 37, 2, 0, 2, 0, 40, 39, 2, 0 </int_array>
 			<string> "names" </string>
-			<string_array  len="27">
+			<string_array  len="41">
 				<string> "Node2D" </string>
 				<string> "script/script" </string>
 				<string> "__meta__" </string>
@@ -25,25 +26,39 @@
 				<string> "size_flags/horizontal" </string>
 				<string> "size_flags/vertical" </string>
 				<string> "custom_fonts/font" </string>
+				<string> "custom_colors/font_color_selected" </string>
 				<string> "custom_constants/icon_margin" </string>
 				<string> "custom_constants/hseparation" </string>
 				<string> "Button" </string>
 				<string> "toggle_mode" </string>
 				<string> "text" </string>
 				<string> "flat" </string>
-				<string> "_on_ItemList_item_activated" </string>
-				<string> "item_activated" </string>
+				<string> "loading" </string>
+				<string> "Label" </string>
+				<string> "visibility/visible" </string>
+				<string> "percent_visible" </string>
+				<string> "lines_skipped" </string>
+				<string> "max_lines_visible" </string>
+				<string> "StreamPlayer" </string>
+				<string> "stream/stream" </string>
+				<string> "stream/play" </string>
+				<string> "stream/loop" </string>
+				<string> "stream/volume_db" </string>
+				<string> "stream/autoplay" </string>
+				<string> "stream/paused" </string>
+				<string> "stream/loop_restart_time" </string>
+				<string> "stream/buffering_ms" </string>
 				<string> "_on_ItemList_item_selected" </string>
 				<string> "item_selected" </string>
 				<string> "_on_Button_pressed" </string>
 				<string> "pressed" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 3 </int>
+			<int> 5 </int>
 			<string> "nodes" </string>
-			<int_array  len="75"> 				-1, -1, 0, 0, -1, 2, 1, 0, 2, 1, 0, 0, 0, 3, 3, -1, 13, 4, 2, 5, 2, 6, 3, 7, 3, 8, 4, 9, 5, 10, 6, 11, 7, 12, 8, 13, 8, 14, 9, 15, 10, 16, 8, 0, 0, 0, 17, 17, -1, 12, 6, 11, 7, 12, 8, 13, 9, 14, 10, 6, 11, 7, 12, 8, 13, 8, 14, 9, 18, 6, 19, 15, 20, 6, 0 </int_array>
+			<int_array  len="133"> 				-1, -1, 0, 0, -1, 2, 1, 0, 2, 1, 0, 0, 0, 3, 3, -1, 14, 4, 2, 5, 2, 6, 3, 7, 3, 8, 4, 9, 5, 10, 6, 11, 7, 12, 8, 13, 8, 14, 9, 15, 10, 16, 11, 17, 8, 0, 0, 0, 18, 18, -1, 12, 6, 12, 7, 13, 8, 14, 9, 15, 10, 6, 11, 7, 12, 8, 13, 8, 14, 9, 19, 6, 20, 16, 21, 6, 0, 0, 0, 23, 22, -1, 13, 24, 6, 6, 17, 7, 18, 8, 18, 9, 19, 10, 7, 11, 7, 12, 8, 14, 9, 20, 20, 25, 21, 26, 22, 27, 23, 0, 0, 0, 28, 28, -1, 8, 29, 24, 30, 6, 31, 7, 32, 25, 33, 6, 34, 6, 35, 25, 36, 26, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="16" shared="false">
+			<array  len="27" shared="false">
 				<resource  external="0">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
@@ -53,7 +68,7 @@
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> -517.105, -236.078 </vector2>
+							<vector2> -321.638, -86.7951 </vector2>
 							<string> "snap_grid" </string>
 							<bool> False </bool>
 							<string> "snap_offset" </string>
@@ -73,7 +88,7 @@
 							<string> "snap_step" </string>
 							<vector2> 10, 10 </vector2>
 							<string> "zoom" </string>
-							<real> 0.540361 </real>
+							<real> 0.598737 </real>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -189,12 +204,23 @@
 				<bool> True </bool>
 				<int> 2 </int>
 				<resource  external="1">  </resource>
+				<color> 0.407843, 1, 0.25098, 1 </color>
 				<int> 4 </int>
 				<real> 576 </real>
 				<real> 519 </real>
 				<real> 783 </real>
 				<real> 591 </real>
 				<string> "Menu" </string>
+				<real> 72 </real>
+				<real> 549 </real>
+				<real> 618 </real>
+				<string> "Loading..." </string>
+				<real> 1 </real>
+				<int> 0 </int>
+				<int> -1 </int>
+				<resource  external="2">  </resource>
+				<real> 0 </real>
+				<int> 500 </int>
 			</array>
 			<string> "version" </string>
 			<int> 1 </int>

@@ -1,11 +1,10 @@
 
 extends Node2D
 
-# member variables here, example:
-# var a=2
-# var b="textvar"
+var global
 
 func _ready():
+	global = get_node("/root/globals")
 	set_process( true )
 	
 func _process(delta):
@@ -14,3 +13,6 @@ func _process(delta):
 
 func to_menu():
 	get_tree().change_scene( "res://scenes/menu.xml" )
+
+func _exit_tree():
+	global.music_pos = get_node("StreamPlayer").get_pos()

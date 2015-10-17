@@ -1,15 +1,11 @@
 
 extends Node2D
 
-# member variables here, example:
-# var a=2
-# var b="textvar"
+var global
 
 func _ready():
-	# Initialization here
-	pass
-
-
+	global = get_node("/root/globals")
+	get_node("StreamPlayer").play(global.music_pos)
 
 
 func _on_credits_pressed():
@@ -21,6 +17,9 @@ func _on_select_pressed():
 
 func _on_exit_pressed():
 	get_tree().quit()
+	
+func _exit_tree():
+	global.music_pos = get_node("StreamPlayer").get_pos()
 
 
 func _on_credits_buttorns_button_selected( button ):

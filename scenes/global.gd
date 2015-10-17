@@ -1,5 +1,7 @@
 extends Node
 
+var music_pos = 1
+
 var current_level # path to scene
 var level_data = [
 	{"name" :"Tutorial", "file": "res://levels/tutorial.xml", "time": null},
@@ -8,8 +10,7 @@ var level_data = [
 
 func _ready():
 	load_level_data()
-	pass
-
+	
 func finish(state, time):
 	load_level_data()
 	#if reset then reload

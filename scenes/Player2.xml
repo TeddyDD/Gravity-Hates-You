@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="7" version="2.0" version_name="Godot Engine v2.0.alpha.custom_build">
-	<ext_resource path="res://textures/0-sheet.png" type="Texture" index="2"></ext_resource>
-	<ext_resource path="res://scenes/Player2.gd" type="Script" index="0"></ext_resource>
 	<ext_resource path="res://colors/fire.res" type="ColorRamp" index="1"></ext_resource>
+	<ext_resource path="res://scenes/Player2.gd" type="Script" index="0"></ext_resource>
+	<ext_resource path="res://textures/0-sheet.png" type="Texture" index="2"></ext_resource>
 	<resource type="CircleShape2D" path="local://1">
 		<real name="custom_solver_bias"> 0 </real>
 		<real name="radius"> 13.677543 </real>
@@ -308,7 +308,7 @@
 						<string> "Anim" </string>
 						<dictionary  shared="false">
 							<string> "animation" </string>
-							<string> "idle" </string>
+							<string> "run" </string>
 							<string> "editing" </string>
 							<bool> False </bool>
 							<string> "player" </string>
@@ -346,7 +346,7 @@
 				</dictionary>
 				<resource  external="2">  </resource>
 				<bool> True </bool>
-				<rect2> 1, 1, 23, 32 </rect2>
+				<rect2> 26, 0, 20, 33 </rect2>
 				<int> 0 </int>
 				<vector2> 1, 1 </vector2>
 				<int> -10000000 </int>
