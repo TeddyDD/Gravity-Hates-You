@@ -3,14 +3,14 @@
 	<ext_resource path="res://textures/vignette.png" type="Texture" index="1"></ext_resource>
 	<ext_resource path="res://textures/white.png" type="Texture" index="2"></ext_resource>
 	<ext_resource path="res://scenes/level.gd" type="Script" index="0"></ext_resource>
-	<ext_resource path="res://scenes/flag.xml" type="PackedScene" index="6"></ext_resource>
 	<ext_resource path="res://fonts/NESCyrillic.fnt" type="Font" index="7"></ext_resource>
-	<ext_resource path="res://scenes/help.xml" type="PackedScene" index="10"></ext_resource>
 	<ext_resource path="res://sounds/Reformat.ogg" type="AudioStream" index="9"></ext_resource>
+	<ext_resource path="res://scenes/Planet2.xml" type="PackedScene" index="4"></ext_resource>
+	<ext_resource path="res://scenes/flag.xml" type="PackedScene" index="6"></ext_resource>
+	<ext_resource path="res://scenes/Player2.xml" type="PackedScene" index="3"></ext_resource>
 	<ext_resource path="res://scenes/background.xml" type="PackedScene" index="5"></ext_resource>
 	<ext_resource path="res://scenes/star.xml" type="PackedScene" index="8"></ext_resource>
-	<ext_resource path="res://scenes/Player2.xml" type="PackedScene" index="3"></ext_resource>
-	<ext_resource path="res://scenes/Planet2.xml" type="PackedScene" index="4"></ext_resource>
+	<ext_resource path="res://scenes/help.xml" type="PackedScene" index="10"></ext_resource>
 	<resource type="CanvasItemShader" path="local://1">
 		<dictionary name="_code" shared="false">
 			<string> "fragment" </string>
@@ -41,7 +41,7 @@
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 			<string> "names" </string>
-			<string_array  len="65">
+			<string_array  len="66">
 				<string> "level" </string>
 				<string> "Node2D" </string>
 				<string> "script/script" </string>
@@ -84,8 +84,9 @@
 				<string> "lines_skipped" </string>
 				<string> "max_lines_visible" </string>
 				<string> "stars" </string>
-				<string> "finished" </string>
+				<string> "Panel" </string>
 				<string> "visibility/visible" </string>
+				<string> "finished" </string>
 				<string> "custom_colors/font_color" </string>
 				<string> "align" </string>
 				<string> "not_record" </string>
@@ -109,21 +110,21 @@
 				<string> "Star1" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 18 </int>
+			<int> 19 </int>
 			<string> "nodes" </string>
-			<int_array  len="374"> 				-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 0, 0, 5, 4, -1, 5, 6, 2, 7, 3, 8, 4, 9, 5, 3, 6, 0, 1, 0, 10, 4, -1, 9, 11, 7, 12, 8, 13, 9, 14, 10, 15, 10, 16, 11, 17, 11, 18, 12, 19, 10, 0, 0, 0, 21, 20, 13, 3, 22, 14, 23, 15, 3, 16, 0, 0, 0, 25, 24, 17, 5, 22, 14, 23, 18, 26, 19, 3, 20, 27, 21, 0, 0, 0, 28, 28, 22, 5, 22, 14, 6, 23, 7, 24, 9, 25, 3, 26, 0, 0, 0, 30, 29, 27, 3, 22, 14, 23, 28, 3, 29, 0, 0, 0, 5, 31, -1, 5, 6, 30, 7, 3, 8, 4, 9, 5, 3, 31, 0, 7, 0, 33, 32, -1, 12, 34, 32, 35, 33, 12, 34, 13, 35, 14, 10, 15, 10, 16, 11, 36, 36, 37, 37, 38, 38, 39, 39, 40, 2, 0, 7, 0, 33, 41, -1, 12, 34, 32, 35, 40, 12, 34, 13, 41, 14, 10, 15, 10, 16, 11, 36, 36, 37, 42, 38, 38, 39, 39, 40, 2, 0, 7, 0, 33, 42, -1, 15, 43, 43, 34, 44, 35, 45, 12, 46, 13, 47, 14, 10, 15, 10, 16, 11, 36, 36, 44, 48, 37, 49, 45, 30, 38, 38, 39, 39, 40, 2, 0, 7, 0, 33, 46, -1, 14, 43, 43, 34, 44, 35, 45, 12, 46, 13, 47, 14, 10, 15, 10, 16, 11, 36, 36, 37, 50, 45, 30, 38, 38, 39, 39, 40, 2, 0, 0, 0, 30, 47, 51, 3, 22, 14, 23, 52, 3, 53, 0, 0, 0, 48, 48, -1, 4, 49, 39, 50, 54, 51, 43, 52, 10, 0, 0, 0, 53, 53, -1, 8, 54, 55, 55, 43, 56, 10, 57, 4, 58, 43, 59, 43, 60, 4, 61, 56, 0, 0, 0, 33, 62, 57, 8, 22, 14, 34, 58, 35, 59, 12, 60, 13, 61, 37, 62, 45, 30, 3, 63, 0, 0, 0, 33, 63, 57, 8, 22, 14, 34, 64, 35, 65, 12, 66, 13, 67, 37, 68, 45, 30, 3, 63, 0, 0, 0, 30, 64, 51, 3, 22, 14, 23, 69, 3, 53, 0 </int_array>
+			<int_array  len="397"> 				-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 0, 0, 5, 4, -1, 5, 6, 2, 7, 3, 8, 4, 9, 5, 3, 6, 0, 1, 0, 10, 4, -1, 9, 11, 7, 12, 8, 13, 9, 14, 10, 15, 10, 16, 11, 17, 11, 18, 12, 19, 10, 0, 0, 0, 21, 20, 13, 3, 22, 14, 23, 15, 3, 16, 0, 0, 0, 25, 24, 17, 5, 22, 14, 23, 18, 26, 19, 3, 20, 27, 21, 0, 0, 0, 28, 28, 22, 5, 22, 14, 6, 23, 7, 24, 9, 25, 3, 26, 0, 0, 0, 30, 29, 27, 3, 22, 14, 23, 28, 3, 29, 0, 0, 0, 5, 31, -1, 4, 6, 30, 7, 3, 8, 4, 9, 5, 0, 7, 0, 33, 32, -1, 12, 34, 31, 35, 32, 12, 33, 13, 34, 14, 10, 15, 10, 16, 11, 36, 35, 37, 36, 38, 37, 39, 38, 40, 2, 0, 7, 0, 33, 41, -1, 12, 34, 31, 35, 39, 12, 33, 13, 40, 14, 10, 15, 10, 16, 11, 36, 35, 37, 41, 38, 37, 39, 38, 40, 2, 0, 7, 0, 42, 42, -1, 9, 43, 42, 34, 43, 35, 44, 12, 45, 13, 46, 14, 42, 15, 10, 16, 11, 17, 11, 0, 7, 0, 33, 44, -1, 15, 43, 42, 34, 47, 35, 48, 12, 49, 13, 50, 14, 10, 15, 10, 16, 11, 36, 35, 45, 51, 37, 52, 46, 30, 38, 37, 39, 38, 40, 2, 0, 7, 0, 33, 47, -1, 14, 43, 42, 34, 47, 35, 48, 12, 49, 13, 50, 14, 10, 15, 10, 16, 11, 36, 35, 37, 53, 46, 30, 38, 37, 39, 38, 40, 2, 0, 0, 0, 30, 48, 54, 3, 22, 14, 23, 55, 3, 56, 0, 0, 0, 49, 49, -1, 4, 50, 38, 51, 57, 52, 42, 53, 10, 0, 0, 0, 54, 54, -1, 8, 55, 58, 56, 42, 57, 10, 58, 4, 59, 42, 60, 42, 61, 4, 62, 59, 0, 0, 0, 33, 63, 60, 8, 22, 14, 34, 61, 35, 62, 12, 63, 13, 64, 37, 65, 46, 30, 3, 66, 0, 0, 0, 33, 64, 60, 8, 22, 14, 34, 67, 35, 68, 12, 69, 13, 70, 37, 71, 46, 30, 3, 66, 0, 0, 0, 30, 65, 54, 3, 22, 14, 23, 72, 3, 56, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="70" shared="false">
+			<array  len="73" shared="false">
 				<resource  external="0">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
-					<string> "2D" </string>
+					<string> "Script" </string>
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> 185.537, 111.409 </vector2>
+							<vector2> -4.8656, -7.37293 </vector2>
 							<string> "snap_grid" </string>
 							<bool> False </bool>
 							<string> "snap_offset" </string>
@@ -143,7 +144,7 @@
 							<string> "snap_step" </string>
 							<vector2> 10, 10 </vector2>
 							<string> "zoom" </string>
-							<real> 0.814508 </real>
+							<real> 1.108036 </real>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -827,10 +828,6 @@
 					</dictionary>
 				</dictionary>
 				<int> 1 </int>
-				<dictionary  shared="false">
-					<string> "_editor_collapsed" </string>
-					<bool> True </bool>
-				</dictionary>
 				<real> 21 </real>
 				<real> 19 </real>
 				<real> 81 </real>
@@ -843,6 +840,10 @@
 				<real> 55 </real>
 				<string> "Stars" </string>
 				<bool> False </bool>
+				<real> 45 </real>
+				<real> 221 </real>
+				<real> 749 </real>
+				<real> 313 </real>
 				<real> 57 </real>
 				<real> 239 </real>
 				<real> 737 </real>

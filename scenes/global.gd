@@ -35,6 +35,12 @@ func get_current_level_data():
 			if l.file == current_level:
 				return l
 
+func get_current_level_id():
+	for i in range( level_data.size() ):
+		if level_data[i].file == current_level:
+			prints("current level id ", i)
+			return i
+
 func load_level_data():
 
 	var file = ConfigFile.new()

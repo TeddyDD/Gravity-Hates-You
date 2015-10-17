@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="13" version="2.0" version_name="Godot Engine v2.0.alpha.custom_build">
-	<ext_resource path="res://scenes/level.gd" type="Script" index="0"></ext_resource>
-	<ext_resource path="res://textures/vignette.png" type="Texture" index="1"></ext_resource>
-	<ext_resource path="res://fonts/NESCyrillic.fnt" type="Font" index="8"></ext_resource>
-	<ext_resource path="res://textures/white.png" type="Texture" index="2"></ext_resource>
-	<ext_resource path="res://sounds/Reformat.ogg" type="AudioStream" index="9"></ext_resource>
-	<ext_resource path="res://scenes/Planet2.xml" type="PackedScene" index="4"></ext_resource>
 	<ext_resource path="res://scenes/Player2.xml" type="PackedScene" index="3"></ext_resource>
-	<ext_resource path="res://scenes/flag.xml" type="PackedScene" index="6"></ext_resource>
+	<ext_resource path="res://textures/vignette.png" type="Texture" index="1"></ext_resource>
+	<ext_resource path="res://textures/white.png" type="Texture" index="2"></ext_resource>
+	<ext_resource path="res://scenes/level.gd" type="Script" index="0"></ext_resource>
+	<ext_resource path="res://fonts/NESCyrillic.fnt" type="Font" index="8"></ext_resource>
+	<ext_resource path="res://sounds/Reformat.ogg" type="AudioStream" index="9"></ext_resource>
 	<ext_resource path="res://scenes/background.xml" type="PackedScene" index="5"></ext_resource>
+	<ext_resource path="res://scenes/flag.xml" type="PackedScene" index="6"></ext_resource>
+	<ext_resource path="res://scenes/Planet2.xml" type="PackedScene" index="4"></ext_resource>
 	<ext_resource path="res://scenes/star.xml" type="PackedScene" index="7"></ext_resource>
 	<resource type="CanvasItemShader" path="local://1">
 		<dictionary name="_code" shared="false">
@@ -40,7 +40,7 @@
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 			<string> "names" </string>
-			<string_array  len="76">
+			<string_array  len="77">
 				<string> "level" </string>
 				<string> "Node2D" </string>
 				<string> "script/script" </string>
@@ -98,8 +98,9 @@
 				<string> "lines_skipped" </string>
 				<string> "max_lines_visible" </string>
 				<string> "stars" </string>
-				<string> "finished" </string>
+				<string> "Panel" </string>
 				<string> "visibility/visible" </string>
+				<string> "finished" </string>
 				<string> "custom_colors/font_color" </string>
 				<string> "align" </string>
 				<string> "not_record" </string>
@@ -119,11 +120,11 @@
 				<string> "stream/buffering_ms" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 28 </int>
+			<int> 29 </int>
 			<string> "nodes" </string>
-			<int_array  len="526"> 				-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 0, 0, 5, 4, -1, 5, 6, 2, 7, 3, 8, 4, 9, 5, 3, 6, 0, 1, 0, 10, 4, -1, 9, 11, 7, 12, 8, 13, 9, 14, 10, 15, 10, 16, 11, 17, 11, 18, 12, 19, 10, 0, 0, 0, 21, 20, 13, 3, 22, 14, 23, 15, 3, 16, 0, 0, 0, 25, 24, 17, 5, 22, 14, 23, 18, 26, 19, 3, 20, 27, 21, 0, 0, 0, 25, 28, 17, 5, 22, 14, 23, 22, 26, 23, 3, 20, 27, 21, 0, 0, 0, 25, 29, 17, 5, 22, 14, 23, 24, 26, 25, 3, 20, 27, 21, 0, 0, 0, 25, 30, 17, 5, 22, 14, 23, 26, 26, 27, 3, 20, 27, 21, 0, 0, 0, 25, 31, 17, 5, 22, 14, 23, 28, 26, 25, 3, 20, 27, 21, 0, 0, 0, 25, 32, 17, 5, 22, 14, 23, 29, 26, 25, 3, 20, 27, 21, 0, 0, 0, 25, 33, 17, 5, 22, 14, 23, 30, 26, 25, 3, 20, 27, 21, 0, 0, 0, 25, 34, 17, 5, 22, 14, 23, 31, 26, 25, 3, 20, 27, 21, 0, 0, 0, 25, 35, 17, 5, 22, 14, 23, 32, 26, 25, 3, 20, 27, 21, 0, 0, 0, 36, 36, 33, 5, 22, 14, 6, 34, 7, 35, 9, 36, 3, 37, 0, 0, 0, 38, 37, 38, 3, 22, 14, 23, 39, 3, 40, 0, 0, 0, 38, 39, 41, 4, 22, 14, 23, 42, 40, 43, 3, 44, 0, 0, 0, 38, 41, 41, 4, 22, 14, 23, 45, 40, 43, 3, 44, 0, 0, 0, 38, 42, 41, 4, 22, 14, 23, 46, 40, 43, 3, 44, 0, 0, 0, 38, 43, 41, 4, 22, 14, 23, 47, 40, 48, 3, 44, 0, 0, 0, 38, 44, 41, 4, 22, 14, 23, 49, 40, 48, 3, 44, 0, 0, 0, 38, 45, 41, 4, 22, 14, 23, 50, 40, 51, 3, 44, 0, 0, 0, 5, 46, -1, 4, 6, 52, 7, 3, 8, 4, 9, 5, 0, 21, 0, 48, 47, -1, 12, 49, 53, 50, 54, 12, 55, 13, 56, 14, 10, 15, 10, 16, 11, 51, 57, 52, 58, 53, 59, 54, 60, 55, 2, 0, 21, 0, 48, 56, -1, 12, 49, 53, 50, 61, 12, 55, 13, 62, 14, 10, 15, 10, 16, 11, 51, 57, 52, 63, 53, 59, 54, 60, 55, 2, 0, 21, 0, 48, 57, -1, 15, 58, 64, 49, 65, 50, 66, 12, 67, 13, 68, 14, 10, 15, 10, 16, 11, 51, 57, 59, 69, 52, 70, 60, 52, 53, 59, 54, 60, 55, 2, 0, 21, 0, 48, 61, -1, 14, 58, 64, 49, 65, 50, 66, 12, 67, 13, 68, 14, 10, 15, 10, 16, 11, 51, 57, 52, 71, 60, 52, 53, 59, 54, 60, 55, 2, 0, 0, 0, 62, 62, -1, 4, 63, 60, 64, 72, 65, 64, 66, 10, 0, 0, 0, 67, 67, -1, 8, 68, 73, 69, 64, 70, 10, 71, 4, 72, 64, 73, 64, 74, 4, 75, 74, 0 </int_array>
+			<int_array  len="551"> 				-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 0, 0, 5, 4, -1, 5, 6, 2, 7, 3, 8, 4, 9, 5, 3, 6, 0, 1, 0, 10, 4, -1, 9, 11, 7, 12, 8, 13, 9, 14, 10, 15, 10, 16, 11, 17, 11, 18, 12, 19, 10, 0, 0, 0, 21, 20, 13, 3, 22, 14, 23, 15, 3, 16, 0, 0, 0, 25, 24, 17, 5, 22, 14, 23, 18, 26, 19, 3, 20, 27, 21, 0, 0, 0, 25, 28, 17, 5, 22, 14, 23, 22, 26, 23, 3, 20, 27, 21, 0, 0, 0, 25, 29, 17, 5, 22, 14, 23, 24, 26, 25, 3, 20, 27, 21, 0, 0, 0, 25, 30, 17, 5, 22, 14, 23, 26, 26, 27, 3, 20, 27, 21, 0, 0, 0, 25, 31, 17, 5, 22, 14, 23, 28, 26, 25, 3, 20, 27, 21, 0, 0, 0, 25, 32, 17, 5, 22, 14, 23, 29, 26, 25, 3, 20, 27, 21, 0, 0, 0, 25, 33, 17, 5, 22, 14, 23, 30, 26, 25, 3, 20, 27, 21, 0, 0, 0, 25, 34, 17, 5, 22, 14, 23, 31, 26, 25, 3, 20, 27, 21, 0, 0, 0, 25, 35, 17, 5, 22, 14, 23, 32, 26, 25, 3, 20, 27, 21, 0, 0, 0, 36, 36, 33, 5, 22, 14, 6, 34, 7, 35, 9, 36, 3, 37, 0, 0, 0, 38, 37, 38, 3, 22, 14, 23, 39, 3, 40, 0, 0, 0, 38, 39, 41, 4, 22, 14, 23, 42, 40, 43, 3, 44, 0, 0, 0, 38, 41, 41, 4, 22, 14, 23, 45, 40, 43, 3, 44, 0, 0, 0, 38, 42, 41, 4, 22, 14, 23, 46, 40, 43, 3, 44, 0, 0, 0, 38, 43, 41, 4, 22, 14, 23, 47, 40, 48, 3, 44, 0, 0, 0, 38, 44, 41, 4, 22, 14, 23, 49, 40, 48, 3, 44, 0, 0, 0, 38, 45, 41, 4, 22, 14, 23, 50, 40, 51, 3, 44, 0, 0, 0, 5, 46, -1, 4, 6, 52, 7, 3, 8, 4, 9, 5, 0, 21, 0, 48, 47, -1, 12, 49, 53, 50, 54, 12, 55, 13, 56, 14, 10, 15, 10, 16, 11, 51, 57, 52, 58, 53, 59, 54, 60, 55, 2, 0, 21, 0, 48, 56, -1, 12, 49, 53, 50, 61, 12, 55, 13, 62, 14, 10, 15, 10, 16, 11, 51, 57, 52, 63, 53, 59, 54, 60, 55, 2, 0, 21, 0, 57, 57, -1, 9, 58, 64, 49, 65, 50, 66, 12, 67, 13, 68, 14, 64, 15, 10, 16, 11, 17, 11, 0, 21, 0, 48, 59, -1, 15, 58, 64, 49, 69, 50, 70, 12, 71, 13, 72, 14, 10, 15, 10, 16, 11, 51, 57, 60, 73, 52, 74, 61, 52, 53, 59, 54, 60, 55, 2, 0, 21, 0, 48, 62, -1, 14, 58, 64, 49, 69, 50, 70, 12, 71, 13, 72, 14, 10, 15, 10, 16, 11, 51, 57, 52, 75, 61, 52, 53, 59, 54, 60, 55, 2, 0, 0, 0, 63, 63, -1, 4, 64, 60, 65, 76, 66, 64, 67, 10, 0, 0, 0, 68, 68, -1, 8, 69, 77, 70, 64, 71, 10, 72, 4, 73, 64, 74, 64, 75, 4, 76, 78, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="75" shared="false">
+			<array  len="79" shared="false">
 				<resource  external="0">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
@@ -1012,6 +1013,10 @@
 				<real> 55 </real>
 				<string> "Stars" </string>
 				<bool> False </bool>
+				<real> 45 </real>
+				<real> 221 </real>
+				<real> 749 </real>
+				<real> 313 </real>
 				<real> 57 </real>
 				<real> 239 </real>
 				<real> 737 </real>

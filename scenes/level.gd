@@ -38,19 +38,26 @@ func _process(delta):
 		global.finish( "reset", null)
 	if Input.is_action_pressed("ui_cancel"):
 		global.finish( "menu", null)
-	#TODO If space and finished then next lvl
-	
+	# If space and finished then next lvl
+	if finished and Input.is_action_pressed("ui_select"):
+		if global.get_current_level_id() + 1 < global.level_data.size():
+			get_tree().change_scene( global.level_data[global.get_current_level_id() + 1 ].file )
+		else:
+			get_tree().change_scene( "res://scenes/select.xml" )
 func finish():
 	finished = true
 	var l = global.get_current_level_data()
 	if  l.time != null and time < l.time:
 		global.finish("finish", time)
 		get_node("hud/finished").show()
+		get_node("hud/Panel").show()
 	elif l.time == null:
 		global.finish("finish", time)
 		get_node("hud/finished").show()
+		get_node("hud/Panel").show()
 	else:
 		get_node("hud/not_record").show()
+		get_node("hud/Panel").show()
 		
 #func set_stars(newvalue):
 #	stars = newvalue
