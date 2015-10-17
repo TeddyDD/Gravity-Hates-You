@@ -19,3 +19,7 @@ func _on_Button_pressed():
 
 func _on_ItemList_item_activated( index ):
 	get_tree().change_scene( global.level_data[index].file )
+
+
+func _on_ItemList_item_selected( index ):
+	get_tree().change_scene( global.level_data[index].file )
