@@ -6,7 +6,7 @@ var global
 func _ready():
 	global = get_node("/root/globals")
 	get_node("StreamPlayer").play(global.music_pos)
-
+	prints("Enter Tree", get_node("StreamPlayer").get_pos())
 
 func _on_credits_pressed():
 	get_node("credits_window").popup()
@@ -19,6 +19,7 @@ func _on_exit_pressed():
 	get_tree().quit()
 	
 func _exit_tree():
+	prints("EXIT Tree", get_node("StreamPlayer").get_pos())
 	global.music_pos = get_node("StreamPlayer").get_pos()
 
 
