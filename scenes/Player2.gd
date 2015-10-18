@@ -48,6 +48,7 @@ func _fixed_process(delta):
 				get_node("Sprite").set_flip_h( false )
 			#jump
 			if Input.is_action_pressed("ui_select"):
+				get_node("SamplePlayer2D").play("jump")
 				velocity += -force * 200
 				get_node("blast").set_emitting( true )
 			#no input but coliding
