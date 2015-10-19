@@ -27,6 +27,6 @@ func _on_credits_buttorns_button_selected( button ):
 	if button == 0:
 		OS.shell_open( "http://2weeksgame.tumblr.com/" ) # website
 	elif button == 1:
-		OS.shell_open( "https://gitlab.com/TeddyDD/gravity-hates-you" ) #repo url
+		OS.shell_open( "https://github.com/TeddyDD/Gravity-Hates-You" ) #repo url
 	elif button == 2:
-		OS.shell_open( "" ) #license url
+		OS.shell_open( "https://github.com/TeddyDD/Gravity-Hates-You/blob/master/LICENSE.md" ) #license url

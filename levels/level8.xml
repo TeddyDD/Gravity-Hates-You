@@ -5,10 +5,10 @@
 	<ext_resource path="res://fonts/NESCyrillic.fnt" type="Font" index="7"></ext_resource>
 	<ext_resource path="res://textures/vignette.png" type="Texture" index="1"></ext_resource>
 	<ext_resource path="res://textures/white.png" type="Texture" index="2"></ext_resource>
+	<ext_resource path="res://scenes/background.xml" type="PackedScene" index="5"></ext_resource>
+	<ext_resource path="res://scenes/Planet2.xml" type="PackedScene" index="4"></ext_resource>
 	<ext_resource path="res://scenes/Player2.xml" type="PackedScene" index="3"></ext_resource>
 	<ext_resource path="res://scenes/star.xml" type="PackedScene" index="9"></ext_resource>
-	<ext_resource path="res://scenes/Planet2.xml" type="PackedScene" index="4"></ext_resource>
-	<ext_resource path="res://scenes/background.xml" type="PackedScene" index="5"></ext_resource>
 	<ext_resource path="res://scenes/flag.xml" type="PackedScene" index="6"></ext_resource>
 	<resource type="CanvasItemShader" path="local://1">
 		<dictionary name="_code" shared="false">
@@ -125,7 +125,7 @@
 				<resource  external="0">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
-					<string> "2D" </string>
+					<string> "Script" </string>
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
 						<string> "2D" </string>
