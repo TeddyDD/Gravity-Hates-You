@@ -31,7 +31,7 @@
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 			<string> "names" </string>
-			<string_array  len="32">
+			<string_array  len="33">
 				<string> "help" </string>
 				<string> "Label" </string>
 				<string> "visibility/opacity" </string>
@@ -42,6 +42,7 @@
 				<string> "size_flags/horizontal" </string>
 				<string> "custom_fonts/font" </string>
 				<string> "text" </string>
+				<string> "align" </string>
 				<string> "autowrap" </string>
 				<string> "percent_visible" </string>
 				<string> "lines_skipped" </string>
@@ -68,7 +69,7 @@
 			<string> "node_count" </string>
 			<int> 3 </int>
 			<string> "nodes" </string>
-			<int_array  len="77"> 				-1, -1, 1, 0, -1, 13, 2, 0, 3, 1, 4, 2, 5, 3, 6, 3, 7, 4, 8, 5, 9, 6, 10, 3, 11, 7, 12, 8, 13, 9, 14, 10, 0, 0, 0, 15, 15, -1, 8, 16, 11, 17, 12, 18, 13, 19, 14, 20, 3, 21, 7, 22, 15, 23, 16, 0, 0, 0, 24, 24, -1, 7, 25, 17, 26, 18, 27, 3, 28, 3, 29, 19, 30, 19, 31, 19, 0 </int_array>
+			<int_array  len="79"> 				-1, -1, 1, 0, -1, 14, 2, 0, 3, 1, 4, 2, 5, 3, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 3, 12, 8, 13, 9, 14, 10, 15, 11, 0, 0, 0, 16, 16, -1, 8, 17, 7, 18, 12, 19, 13, 20, 14, 21, 3, 22, 8, 23, 15, 24, 16, 0, 0, 0, 25, 25, -1, 7, 26, 17, 27, 18, 28, 3, 29, 3, 30, 19, 31, 19, 32, 19, 0 </int_array>
 			<string> "variants" </string>
 			<array  len="20" shared="false">
 				<real> 0.9 </real>
@@ -78,6 +79,7 @@
 				<int> 2 </int>
 				<resource  external="0">  </resource>
 				<string> "Help Text" </string>
+				<int> 1 </int>
 				<real> 1 </real>
 				<int> 0 </int>
 				<int> -1 </int>
@@ -205,14 +207,8 @@
 						</dictionary>
 						<string> "Anim" </string>
 						<dictionary  shared="false">
-							<string> "animation" </string>
-							<string> "appear" </string>
-							<string> "editing" </string>
-							<bool> True </bool>
-							<string> "player" </string>
-							<node_path> "AnimationPlayer" </node_path>
 							<string> "visible" </string>
-							<bool> True </bool>
+							<bool> False </bool>
 						</dictionary>
 					</dictionary>
 					<string> "__editor_run_settings__" </string>
@@ -223,7 +219,6 @@
 						<int> 0 </int>
 					</dictionary>
 				</dictionary>
-				<int> 1 </int>
 				<real> 0 </real>
 				<node_path> ".." </node_path>
 				<resource  resource_type="Animation" path="local://1">  </resource>

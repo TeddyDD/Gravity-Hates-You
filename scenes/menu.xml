@@ -9,9 +9,9 @@
 			<string> "conn_count" </string>
 			<int> 4 </int>
 			<string> "conns" </string>
-			<int_array  len="24"> 				2, 0, 59, 58, 2, 0, 3, 0, 59, 60, 2, 0, 4, 0, 59, 61, 2, 0, 6, 0, 63, 62, 2, 0 </int_array>
+			<int_array  len="24"> 				2, 0, 58, 57, 2, 0, 3, 0, 58, 59, 2, 0, 4, 0, 58, 60, 2, 0, 6, 0, 62, 61, 2, 0 </int_array>
 			<string> "names" </string>
-			<string_array  len="64">
+			<string_array  len="63">
 				<string> "Node2D" </string>
 				<string> "script/script" </string>
 				<string> "__meta__" </string>
@@ -35,7 +35,6 @@
 				<string> "exit" </string>
 				<string> "credits_window" </string>
 				<string> "AcceptDialog" </string>
-				<string> "visibility/visible" </string>
 				<string> "popup/exclusive" </string>
 				<string> "window/title" </string>
 				<string> "credits_buttorns" </string>
@@ -80,7 +79,7 @@
 			<string> "node_count" </string>
 			<int> 10 </int>
 			<string> "nodes" </string>
-			<int_array  len="310"> 				-1, -1, 0, 0, -1, 2, 1, 0, 2, 1, 0, 0, 0, 3, 3, -1, 8, 4, 2, 5, 2, 6, 3, 7, 3, 8, 4, 9, 4, 10, 5, 2, 6, 0, 0, 0, 12, 11, -1, 13, 13, 7, 14, 8, 4, 9, 5, 10, 6, 11, 7, 3, 8, 4, 9, 4, 15, 12, 16, 11, 17, 13, 18, 11, 2, 14, 0, 0, 0, 12, 19, -1, 13, 13, 7, 14, 15, 4, 9, 5, 16, 6, 11, 7, 3, 8, 4, 9, 4, 15, 12, 16, 11, 17, 17, 18, 11, 2, 18, 0, 0, 0, 12, 20, -1, 13, 13, 7, 14, 19, 4, 9, 5, 20, 6, 11, 7, 3, 8, 4, 9, 4, 15, 12, 16, 11, 17, 21, 18, 11, 2, 22, 0, 0, 0, 22, 21, -1, 12, 23, 11, 13, 23, 14, 24, 4, 25, 5, 26, 6, 11, 7, 11, 8, 4, 9, 4, 24, 3, 25, 17, 2, 27, 0, 5, 0, 27, 26, -1, 23, 13, 28, 14, 29, 4, 30, 5, 31, 6, 11, 7, 3, 8, 4, 9, 4, 28, 12, 15, 12, 29, 32, 30, 33, 31, 32, 32, 34, 33, 35, 34, 36, 35, 35, 36, 37, 37, 35, 38, 38, 39, 35, 40, 39, 2, 40, 0, 5, 0, 41, 17, -1, 16, 42, 41, 43, 41, 13, 42, 14, 42, 4, 42, 5, 43, 6, 3, 7, 3, 8, 4, 15, 12, 17, 44, 44, 3, 45, 45, 46, 46, 47, 47, 2, 48, 0, 0, 0, 48, 48, -1, 8, 49, 49, 50, 11, 51, 3, 52, 33, 53, 11, 54, 11, 55, 33, 56, 50, 0, 0, 0, 41, 57, -1, 12, 13, 42, 14, 51, 4, 52, 5, 53, 6, 3, 7, 3, 8, 4, 15, 12, 17, 54, 45, 45, 46, 46, 47, 47, 0 </int_array>
+			<int_array  len="308"> 				-1, -1, 0, 0, -1, 2, 1, 0, 2, 1, 0, 0, 0, 3, 3, -1, 8, 4, 2, 5, 2, 6, 3, 7, 3, 8, 4, 9, 4, 10, 5, 2, 6, 0, 0, 0, 12, 11, -1, 13, 13, 7, 14, 8, 4, 9, 5, 10, 6, 11, 7, 3, 8, 4, 9, 4, 15, 12, 16, 11, 17, 13, 18, 11, 2, 14, 0, 0, 0, 12, 19, -1, 13, 13, 7, 14, 15, 4, 9, 5, 16, 6, 11, 7, 3, 8, 4, 9, 4, 15, 12, 16, 11, 17, 17, 18, 11, 2, 18, 0, 0, 0, 12, 20, -1, 13, 13, 7, 14, 19, 4, 9, 5, 20, 6, 11, 7, 3, 8, 4, 9, 4, 15, 12, 16, 11, 17, 21, 18, 11, 2, 22, 0, 0, 0, 22, 21, -1, 11, 13, 23, 14, 24, 4, 25, 5, 26, 6, 11, 7, 11, 8, 4, 9, 4, 23, 3, 24, 17, 2, 27, 0, 5, 0, 26, 25, -1, 23, 13, 28, 14, 29, 4, 30, 5, 31, 6, 11, 7, 3, 8, 4, 9, 4, 27, 12, 15, 12, 28, 32, 29, 33, 30, 32, 31, 34, 32, 35, 33, 36, 34, 35, 35, 37, 36, 35, 37, 38, 38, 35, 39, 39, 2, 40, 0, 5, 0, 40, 17, -1, 16, 41, 41, 42, 41, 13, 42, 14, 42, 4, 42, 5, 43, 6, 3, 7, 3, 8, 4, 15, 12, 17, 44, 43, 3, 44, 45, 45, 46, 46, 47, 2, 48, 0, 0, 0, 47, 47, -1, 8, 48, 49, 49, 11, 50, 3, 51, 33, 52, 11, 53, 11, 54, 33, 55, 50, 0, 0, 0, 40, 56, -1, 12, 13, 42, 14, 51, 4, 52, 5, 53, 6, 3, 7, 3, 8, 4, 15, 12, 17, 54, 44, 45, 45, 46, 46, 47, 0 </int_array>
 			<string> "variants" </string>
 			<array  len="55" shared="false">
 				<resource  external="0">  </resource>
@@ -279,7 +278,7 @@
 				<int> 1 </int>
 				<real> 10 </real>
 				<real> 113 </real>
-				<string> "Designed and created by TeddyDD - Daniel Lewan&#000a;Graphics are made by my awsome girlfriend Katarzyna &quot;Kyasarinn&quot; Hojka&#000a;&#000a;For full license and credits click License button.&#000a;&#000a;Thanks for playing" </string>
+				<string> "Designed and created by TeddyDD - Daniel Lewan&#000a;Graphics are made by my awsome girlfriend Katarzyna &quot;Kyasarinn&quot; Hojka&#000a;&#000a;Music by Kevin MacLeod (Creative Commons By)&#000a;&#000a;For full license and credits click License button.&#000a;&#000a;Thanks for playing" </string>
 				<real> 1 </real>
 				<int> 0 </int>
 				<int> -1 </int>

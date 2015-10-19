@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="14" version="2.0" version_name="Godot Engine v2.0.alpha.custom_build">
 	<ext_resource path="res://scenes/level.gd" type="Script" index="0"></ext_resource>
-	<ext_resource path="res://sounds/Reformat.ogg" type="AudioStream" index="8"></ext_resource>
 	<ext_resource path="res://textures/vignette.png" type="Texture" index="1"></ext_resource>
-	<ext_resource path="res://scenes/Planet2.xml" type="PackedScene" index="4"></ext_resource>
+	<ext_resource path="res://sounds/Reformat.ogg" type="AudioStream" index="9"></ext_resource>
 	<ext_resource path="res://scenes/flag.xml" type="PackedScene" index="6"></ext_resource>
-	<ext_resource path="res://scenes/background.xml" type="PackedScene" index="5"></ext_resource>
-	<ext_resource path="res://scenes/star.xml" type="PackedScene" index="9"></ext_resource>
-	<ext_resource path="res://scenes/help.xml" type="PackedScene" index="10"></ext_resource>
-	<ext_resource path="res://fonts/NESCyrillic.fnt" type="Font" index="7"></ext_resource>
+	<ext_resource path="res://fonts/NESCyrillic.fnt" type="Font" index="8"></ext_resource>
 	<ext_resource path="res://textures/white.png" type="Texture" index="2"></ext_resource>
+	<ext_resource path="res://scenes/background.xml" type="PackedScene" index="5"></ext_resource>
+	<ext_resource path="res://scenes/help.xml" type="PackedScene" index="10"></ext_resource>
 	<ext_resource path="res://scenes/Player2.xml" type="PackedScene" index="3"></ext_resource>
+	<ext_resource path="res://scenes/star.xml" type="PackedScene" index="7"></ext_resource>
+	<ext_resource path="res://scenes/Planet2.xml" type="PackedScene" index="4"></ext_resource>
 	<resource type="CanvasItemShader" path="local://1">
 		<dictionary name="_code" shared="false">
 			<string> "fragment" </string>
@@ -41,7 +41,7 @@
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 			<string> "names" </string>
-			<string_array  len="64">
+			<string_array  len="78">
 				<string> "level" </string>
 				<string> "Node2D" </string>
 				<string> "script/script" </string>
@@ -68,10 +68,26 @@
 				<string> "transform/pos" </string>
 				<string> "Planet" </string>
 				<string> "Sprite" </string>
+				<string> "transform/scale" </string>
 				<string> "mass" </string>
+				<string> "Planet1" </string>
+				<string> "Planet2" </string>
+				<string> "Planet3" </string>
+				<string> "Planet4" </string>
+				<string> "Planet5" </string>
+				<string> "Planet6" </string>
+				<string> "Planet7" </string>
+				<string> "Planet8" </string>
 				<string> "ParallaxBackground" </string>
 				<string> "flag" </string>
 				<string> "Area2D" </string>
+				<string> "Flag" </string>
+				<string> "transform/rot" </string>
+				<string> "Flag1" </string>
+				<string> "Flag2" </string>
+				<string> "Flag3" </string>
+				<string> "Flag4" </string>
+				<string> "Flag5" </string>
 				<string> "hud" </string>
 				<string> "time" </string>
 				<string> "Label" </string>
@@ -103,26 +119,24 @@
 				<string> "stream/paused" </string>
 				<string> "stream/loop_restart_time" </string>
 				<string> "stream/buffering_ms" </string>
-				<string> "Star" </string>
-				<string> "transform/scale" </string>
 				<string> "help" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 17 </int>
+			<int> 30 </int>
 			<string> "nodes" </string>
-			<int_array  len="359"> 				-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 0, 0, 5, 4, -1, 5, 6, 2, 7, 3, 8, 4, 9, 5, 3, 6, 0, 1, 0, 10, 4, -1, 9, 11, 7, 12, 8, 13, 9, 14, 10, 15, 10, 16, 11, 17, 11, 18, 12, 19, 10, 0, 0, 0, 21, 20, 13, 3, 22, 14, 23, 15, 3, 16, 0, 0, 0, 25, 24, 17, 4, 22, 14, 23, 18, 3, 19, 26, 20, 0, 0, 0, 27, 27, 21, 5, 22, 14, 6, 22, 7, 23, 9, 24, 3, 25, 0, 0, 0, 29, 28, 26, 3, 22, 14, 23, 27, 3, 28, 0, 0, 0, 5, 30, -1, 5, 6, 29, 7, 3, 8, 4, 9, 5, 3, 30, 0, 7, 0, 32, 31, -1, 12, 33, 31, 34, 32, 12, 33, 13, 34, 14, 10, 15, 10, 16, 11, 35, 35, 36, 36, 37, 37, 38, 38, 39, 2, 0, 7, 0, 32, 40, -1, 12, 33, 31, 34, 39, 12, 33, 13, 40, 14, 10, 15, 10, 16, 11, 35, 35, 36, 41, 37, 37, 38, 38, 39, 2, 0, 7, 0, 41, 41, -1, 9, 42, 42, 33, 43, 34, 44, 12, 45, 13, 46, 14, 42, 15, 10, 16, 11, 17, 11, 0, 7, 0, 32, 43, -1, 15, 42, 42, 33, 47, 34, 48, 12, 49, 13, 50, 14, 10, 15, 10, 16, 11, 35, 35, 44, 51, 36, 52, 45, 29, 37, 37, 38, 38, 39, 2, 0, 7, 0, 32, 46, -1, 14, 42, 42, 33, 47, 34, 48, 12, 49, 13, 50, 14, 10, 15, 10, 16, 11, 35, 35, 36, 53, 45, 29, 37, 37, 38, 38, 39, 2, 0, 0, 0, 47, 47, -1, 4, 48, 38, 49, 54, 50, 42, 51, 10, 0, 0, 0, 52, 52, -1, 8, 53, 55, 54, 42, 55, 10, 56, 4, 57, 42, 58, 42, 59, 4, 60, 56, 0, 0, 0, 29, 61, 57, 4, 22, 14, 23, 58, 62, 59, 3, 60, 0, 0, 0, 32, 63, 61, 6, 22, 14, 33, 62, 34, 63, 12, 64, 13, 65, 3, 66, 0 </int_array>
+			<int_array  len="572"> 				-1, -1, 1, 0, -1, 2, 2, 0, 3, 1, 0, 0, 0, 5, 4, -1, 5, 6, 2, 7, 3, 8, 4, 9, 5, 3, 6, 0, 1, 0, 10, 4, -1, 9, 11, 7, 12, 8, 13, 9, 14, 10, 15, 10, 16, 11, 17, 11, 18, 12, 19, 10, 0, 0, 0, 21, 20, 13, 3, 22, 14, 23, 15, 3, 16, 0, 0, 0, 25, 24, 17, 5, 22, 14, 23, 18, 26, 19, 3, 20, 27, 21, 0, 0, 0, 25, 28, 17, 5, 22, 14, 23, 22, 26, 23, 3, 20, 27, 21, 0, 0, 0, 25, 29, 17, 5, 22, 14, 23, 24, 26, 25, 3, 20, 27, 21, 0, 0, 0, 25, 30, 17, 5, 22, 14, 23, 26, 26, 27, 3, 20, 27, 21, 0, 0, 0, 25, 31, 17, 5, 22, 14, 23, 28, 26, 25, 3, 20, 27, 21, 0, 0, 0, 25, 32, 17, 5, 22, 14, 23, 29, 26, 25, 3, 20, 27, 21, 0, 0, 0, 25, 33, 17, 5, 22, 14, 23, 30, 26, 25, 3, 20, 27, 21, 0, 0, 0, 25, 34, 17, 5, 22, 14, 23, 31, 26, 25, 3, 20, 27, 21, 0, 0, 0, 25, 35, 17, 5, 22, 14, 23, 32, 26, 25, 3, 20, 27, 21, 0, 0, 0, 36, 36, 33, 5, 22, 14, 6, 34, 7, 35, 9, 36, 3, 37, 0, 0, 0, 38, 37, 38, 3, 22, 14, 23, 39, 3, 40, 0, 0, 0, 38, 39, 41, 4, 22, 14, 23, 42, 40, 43, 3, 44, 0, 0, 0, 38, 41, 41, 4, 22, 14, 23, 45, 40, 43, 3, 44, 0, 0, 0, 38, 42, 41, 4, 22, 14, 23, 46, 40, 43, 3, 44, 0, 0, 0, 38, 43, 41, 4, 22, 14, 23, 47, 40, 48, 3, 44, 0, 0, 0, 38, 44, 41, 4, 22, 14, 23, 49, 40, 48, 3, 44, 0, 0, 0, 38, 45, 41, 4, 22, 14, 23, 50, 40, 51, 3, 44, 0, 0, 0, 5, 46, -1, 4, 6, 52, 7, 3, 8, 4, 9, 5, 0, 21, 0, 48, 47, -1, 12, 49, 53, 50, 54, 12, 55, 13, 56, 14, 10, 15, 10, 16, 11, 51, 57, 52, 58, 53, 59, 54, 60, 55, 2, 0, 21, 0, 48, 56, -1, 12, 49, 53, 50, 61, 12, 55, 13, 62, 14, 10, 15, 10, 16, 11, 51, 57, 52, 63, 53, 59, 54, 60, 55, 2, 0, 21, 0, 57, 57, -1, 9, 58, 64, 49, 65, 50, 66, 12, 67, 13, 68, 14, 64, 15, 10, 16, 11, 17, 11, 0, 21, 0, 48, 59, -1, 15, 58, 64, 49, 69, 50, 70, 12, 71, 13, 72, 14, 10, 15, 10, 16, 11, 51, 57, 60, 73, 52, 74, 61, 52, 53, 59, 54, 60, 55, 2, 0, 21, 0, 48, 62, -1, 14, 58, 64, 49, 69, 50, 70, 12, 71, 13, 72, 14, 10, 15, 10, 16, 11, 51, 57, 52, 75, 61, 52, 53, 59, 54, 60, 55, 2, 0, 0, 0, 63, 63, -1, 4, 64, 60, 65, 76, 66, 64, 67, 10, 0, 0, 0, 68, 68, -1, 8, 69, 77, 70, 64, 71, 10, 72, 4, 73, 64, 74, 64, 75, 4, 76, 78, 0, 0, 0, 48, 77, 79, 7, 22, 14, 49, 80, 50, 81, 12, 82, 13, 83, 52, 84, 3, 85, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="67" shared="false">
+			<array  len="86" shared="false">
 				<resource  external="0">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
-					<string> "Script" </string>
+					<string> "2D" </string>
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> -129.912, -6.69584 </vector2>
+							<vector2> 607.197, 248.481 </vector2>
 							<string> "snap_grid" </string>
 							<bool> False </bool>
 							<string> "snap_offset" </string>
@@ -142,7 +156,7 @@
 							<string> "snap_step" </string>
 							<vector2> 10, 10 </vector2>
 							<string> "zoom" </string>
-							<real> 0.814508 </real>
+							<real> 3.090877 </real>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -266,7 +280,7 @@
 				<resource  external="2">  </resource>
 				<resource  external="3">  </resource>
 				<node_path> "" </node_path>
-				<vector2> 230.822, 105.265 </vector2>
+				<vector2> 151.019, 117.542 </vector2>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
 					<string> "Script" </string>
@@ -404,7 +418,8 @@
 					</dictionary>
 				</dictionary>
 				<resource  external="4">  </resource>
-				<vector2> 406.384, 322.622 </vector2>
+				<vector2> 669.119, 522.743 </vector2>
+				<vector2> 0.696322, 0.696322 </vector2>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
 					<string> "2D" </string>
@@ -542,6 +557,17 @@
 					</dictionary>
 				</dictionary>
 				<real> 20188.955078 </real>
+				<vector2> 295.204, 255.529 </vector2>
+				<vector2> 0.930121, 0.930121 </vector2>
+				<vector2> 926.296, 589.595 </vector2>
+				<vector2> 0.304106, 0.304106 </vector2>
+				<vector2> 948.827, 186.886 </vector2>
+				<vector2> 0.475705, 0.475705 </vector2>
+				<vector2> 720.792, -77.7636 </vector2>
+				<vector2> 270.13, 571.55 </vector2>
+				<vector2> 213.39, 812.554 </vector2>
+				<vector2> -123.015, 439.697 </vector2>
+				<vector2> 629.041, 171.592 </vector2>
 				<resource  external="5">  </resource>
 				<int> -2 </int>
 				<vector2> 400, 300 </vector2>
@@ -687,7 +713,7 @@
 					<bool> True </bool>
 				</dictionary>
 				<resource  external="6">  </resource>
-				<vector2> 593.709, 107.279 </vector2>
+				<vector2> 292.914, 85.1793 </vector2>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
 					<string> "2D" </string>
@@ -824,49 +850,18 @@
 						<int> 0 </int>
 					</dictionary>
 				</dictionary>
-				<int> 1 </int>
-				<dictionary  shared="false">
-					<string> "_editor_collapsed" </string>
-					<bool> True </bool>
-				</dictionary>
-				<real> 21 </real>
-				<real> 19 </real>
-				<real> 81 </real>
-				<real> 35 </real>
 				<resource  external="7">  </resource>
-				<string> "Time" </string>
-				<real> 1 </real>
-				<int> 0 </int>
-				<real> 39 </real>
-				<real> 55 </real>
-				<string> "Stars" </string>
-				<bool> False </bool>
-				<real> 45 </real>
-				<real> 221 </real>
-				<real> 749 </real>
-				<real> 313 </real>
-				<real> 57 </real>
-				<real> 239 </real>
-				<real> 737 </real>
-				<real> 303 </real>
-				<color> 0.410948, 1, 0.25292, 1 </color>
-				<string> "Level finished!&#000a;Press [R] to play again or [SPACE] to next level&#000a;&#000a;New High Score!" </string>
-				<string> "Level finished!&#000a;Press [R] to play again or [SPACE] to next level&#000a;&#000a;You did not beat the record. Try again." </string>
-				<real> 0.1 </real>
-				<resource  external="8">  </resource>
-				<int> 500 </int>
-				<resource  external="9">  </resource>
-				<vector2> 493.074, 104.357 </vector2>
-				<vector2> 1, 1 </vector2>
+				<vector2> 357.775, 93.2675 </vector2>
+				<real> -8.372355 </real>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
-					<string> "Script" </string>
+					<string> "2D" </string>
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "ofs" </string>
-							<vector2> -197.258, -73.4045 </vector2>
+							<vector2> -98.3682, -48.7909 </vector2>
 							<string> "snap_grid" </string>
 							<bool> False </bool>
 							<string> "snap_offset" </string>
@@ -886,7 +881,7 @@
 							<string> "snap_step" </string>
 							<vector2> 10, 10 </vector2>
 							<string> "zoom" </string>
-							<real> 3.090872 </real>
+							<real> 4.204742 </real>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
@@ -982,8 +977,14 @@
 						</dictionary>
 						<string> "Anim" </string>
 						<dictionary  shared="false">
+							<string> "animation" </string>
+							<string> "normal" </string>
+							<string> "editing" </string>
+							<bool> True </bool>
+							<string> "player" </string>
+							<node_path> "anim" </node_path>
 							<string> "visible" </string>
-							<bool> False </bool>
+							<bool> True </bool>
 						</dictionary>
 					</dictionary>
 					<string> "__editor_run_settings__" </string>
@@ -994,11 +995,46 @@
 						<int> 0 </int>
 					</dictionary>
 				</dictionary>
+				<vector2> 610.442, 102.249 </vector2>
+				<vector2> 436.442, 356.248 </vector2>
+				<vector2> 456.442, 192.248 </vector2>
+				<real> 95.633919 </real>
+				<vector2> 638.442, 395.248 </vector2>
+				<vector2> 203.442, 395.248 </vector2>
+				<real> -90.972061 </real>
+				<int> 1 </int>
+				<real> 21 </real>
+				<real> 19 </real>
+				<real> 81 </real>
+				<real> 35 </real>
+				<resource  external="8">  </resource>
+				<string> "Time" </string>
+				<real> 1 </real>
+				<int> 0 </int>
+				<real> 39 </real>
+				<real> 55 </real>
+				<string> "Stars" </string>
+				<bool> False </bool>
+				<real> 45 </real>
+				<real> 221 </real>
+				<real> 749 </real>
+				<real> 313 </real>
+				<real> 57 </real>
+				<real> 239 </real>
+				<real> 737 </real>
+				<real> 303 </real>
+				<color> 0.410948, 1, 0.25292, 1 </color>
+				<string> "Level finished!&#000a;Press [R] to play again or [SPACE] to next level&#000a;&#000a;New High Score!" </string>
+				<string> "Level finished!&#000a;Press [R] to play again or [SPACE] to next level&#000a;&#000a;You did not beat the record. Try again." </string>
+				<real> 0.1 </real>
+				<resource  external="9">  </resource>
+				<int> 500 </int>
 				<resource  external="10">  </resource>
-				<real> 374 </real>
-				<real> 96 </real>
-				<real> 414 </real>
-				<real> 109 </real>
+				<real> 738 </real>
+				<real> 291 </real>
+				<real> 913 </real>
+				<real> 409 </real>
+				<string> "Can you finish this level under 8.5 seconds?" </string>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_screen__" </string>
 					<string> "2D" </string>
@@ -1123,14 +1159,8 @@
 						</dictionary>
 						<string> "Anim" </string>
 						<dictionary  shared="false">
-							<string> "animation" </string>
-							<string> "appear" </string>
-							<string> "editing" </string>
-							<bool> True </bool>
-							<string> "player" </string>
-							<node_path> "AnimationPlayer" </node_path>
 							<string> "visible" </string>
-							<bool> True </bool>
+							<bool> False </bool>
 						</dictionary>
 					</dictionary>
 					<string> "__editor_run_settings__" </string>
