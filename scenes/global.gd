@@ -1,6 +1,5 @@
 extends Node
 
-var music_pos = 1
 
 var current_level # path to scene
 var level_data = [

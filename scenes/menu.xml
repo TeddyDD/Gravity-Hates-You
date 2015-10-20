@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="5" version="2.0" version_name="Godot Engine v2.0.alpha.custom_build">
+<resource_file type="PackedScene" subresource_count="4" version="2.0" version_name="Godot Engine v2.0.alpha.custom_build">
+	<ext_resource path="res://fonts/NESCyrillic.fnt" type="Font" index="2"></ext_resource>
 	<ext_resource path="res://textures/Menu.png" type="Texture" index="1"></ext_resource>
 	<ext_resource path="res://scenes/menu.gd" type="Script" index="0"></ext_resource>
-	<ext_resource path="res://sounds/Reformat.ogg" type="AudioStream" index="3"></ext_resource>
-	<ext_resource path="res://fonts/NESCyrillic.fnt" type="Font" index="2"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>
 			<int> 4 </int>
 			<string> "conns" </string>
-			<int_array  len="24"> 				2, 0, 60, 59, 2, 0, 3, 0, 60, 61, 2, 0, 4, 0, 60, 62, 2, 0, 6, 0, 64, 63, 2, 0 </int_array>
+			<int_array  len="24"> 				2, 0, 51, 50, 2, 0, 3, 0, 51, 52, 2, 0, 4, 0, 51, 53, 2, 0, 6, 0, 55, 54, 2, 0 </int_array>
 			<string> "names" </string>
-			<string_array  len="65">
+			<string_array  len="56">
 				<string> "Node2D" </string>
 				<string> "transform/pos" </string>
 				<string> "script/script" </string>
@@ -61,15 +60,6 @@
 				<string> "percent_visible" </string>
 				<string> "lines_skipped" </string>
 				<string> "max_lines_visible" </string>
-				<string> "StreamPlayer" </string>
-				<string> "stream/stream" </string>
-				<string> "stream/play" </string>
-				<string> "stream/loop" </string>
-				<string> "stream/volume_db" </string>
-				<string> "stream/autoplay" </string>
-				<string> "stream/paused" </string>
-				<string> "stream/loop_restart_time" </string>
-				<string> "stream/buffering_ms" </string>
 				<string> "version" </string>
 				<string> "_on_select_pressed" </string>
 				<string> "pressed" </string>
@@ -79,11 +69,11 @@
 				<string> "button_selected" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 10 </int>
+			<int> 9 </int>
 			<string> "nodes" </string>
-			<int_array  len="312"> 				-1, -1, 0, 0, -1, 3, 1, 0, 2, 1, 3, 2, 0, 0, 0, 4, 4, -1, 8, 5, 3, 6, 3, 7, 4, 8, 4, 9, 5, 10, 5, 11, 6, 3, 7, 0, 0, 0, 13, 12, -1, 13, 14, 8, 15, 9, 5, 10, 6, 11, 7, 12, 8, 4, 9, 5, 10, 5, 16, 13, 17, 12, 18, 14, 19, 12, 3, 15, 0, 0, 0, 13, 20, -1, 13, 14, 8, 15, 16, 5, 10, 6, 17, 7, 12, 8, 4, 9, 5, 10, 5, 16, 13, 17, 12, 18, 18, 19, 12, 3, 19, 0, 0, 0, 13, 21, -1, 13, 14, 8, 15, 20, 5, 10, 6, 21, 7, 12, 8, 4, 9, 5, 10, 5, 16, 13, 17, 12, 18, 22, 19, 12, 3, 23, 0, 0, 0, 23, 22, -1, 12, 24, 12, 14, 24, 15, 25, 5, 26, 6, 27, 7, 12, 8, 12, 9, 5, 10, 5, 25, 4, 26, 18, 3, 28, 0, 5, 0, 28, 27, -1, 23, 14, 29, 15, 30, 5, 31, 6, 32, 7, 12, 8, 4, 9, 5, 10, 5, 29, 13, 16, 13, 30, 33, 31, 34, 32, 33, 33, 35, 34, 36, 35, 37, 36, 36, 37, 38, 38, 36, 39, 39, 40, 36, 41, 40, 3, 41, 0, 5, 0, 42, 18, -1, 16, 43, 42, 44, 42, 14, 43, 15, 43, 5, 43, 6, 44, 7, 4, 8, 4, 9, 5, 16, 13, 18, 45, 45, 4, 46, 46, 47, 47, 48, 48, 3, 49, 0, 0, 0, 49, 49, -1, 8, 50, 50, 51, 12, 52, 4, 53, 34, 54, 12, 55, 12, 56, 34, 57, 51, 0, 0, 0, 42, 58, -1, 12, 14, 43, 15, 52, 5, 53, 6, 54, 7, 4, 8, 4, 9, 5, 16, 13, 18, 55, 46, 46, 47, 47, 48, 48, 0 </int_array>
+			<int_array  len="289"> 				-1, -1, 0, 0, -1, 3, 1, 0, 2, 1, 3, 2, 0, 0, 0, 4, 4, -1, 8, 5, 3, 6, 3, 7, 4, 8, 4, 9, 5, 10, 5, 11, 6, 3, 7, 0, 0, 0, 13, 12, -1, 13, 14, 8, 15, 9, 5, 10, 6, 11, 7, 12, 8, 4, 9, 5, 10, 5, 16, 13, 17, 12, 18, 14, 19, 12, 3, 15, 0, 0, 0, 13, 20, -1, 13, 14, 8, 15, 16, 5, 10, 6, 17, 7, 12, 8, 4, 9, 5, 10, 5, 16, 13, 17, 12, 18, 18, 19, 12, 3, 19, 0, 0, 0, 13, 21, -1, 13, 14, 8, 15, 20, 5, 10, 6, 21, 7, 12, 8, 4, 9, 5, 10, 5, 16, 13, 17, 12, 18, 22, 19, 12, 3, 23, 0, 0, 0, 23, 22, -1, 12, 24, 12, 14, 24, 15, 25, 5, 26, 6, 27, 7, 12, 8, 12, 9, 5, 10, 5, 25, 4, 26, 18, 3, 28, 0, 5, 0, 28, 27, -1, 23, 14, 29, 15, 30, 5, 31, 6, 32, 7, 12, 8, 4, 9, 5, 10, 5, 29, 13, 16, 13, 30, 33, 31, 34, 32, 33, 33, 35, 34, 36, 35, 37, 36, 36, 37, 38, 38, 36, 39, 39, 40, 36, 41, 40, 3, 41, 0, 5, 0, 42, 18, -1, 16, 43, 42, 44, 42, 14, 43, 15, 43, 5, 43, 6, 44, 7, 4, 8, 4, 9, 5, 16, 13, 18, 45, 45, 4, 46, 46, 47, 47, 48, 48, 3, 49, 0, 0, 0, 42, 49, -1, 12, 14, 43, 15, 50, 5, 51, 6, 52, 7, 4, 8, 4, 9, 5, 16, 13, 18, 53, 46, 46, 47, 47, 48, 48, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="56" shared="false">
+			<array  len="54" shared="false">
 				<vector2> -1.10803, 0 </vector2>
 				<resource  external="0">  </resource>
 				<dictionary  shared="false">
@@ -289,8 +279,6 @@
 					<string> "_edit_lock_" </string>
 					<bool> True </bool>
 				</dictionary>
-				<resource  external="3">  </resource>
-				<int> 1000 </int>
 				<real> 576 </real>
 				<real> 100 </real>
 				<real> 592 </real>

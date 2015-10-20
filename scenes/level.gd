@@ -9,24 +9,20 @@ var finished = false
 
 var time_label
 var stars_label
-var music
 
 var planets = []
 
 func _ready():
 	global = get_node("/root/globals")
-	music = get_node("StreamPlayer")
 	time_label = get_node( "hud/time" )
 	stars_label = get_node( "hud/stars")
-	music.play( global.music_pos )
 	set_process( true )
 	
 	stars = get_tree().get_nodes_in_group( "star" ).size()
 	global.current_level = get_filename()
 	prints( get_filename() )
 	
-func _exit_tree():
-	global.music_pos = get_node("StreamPlayer").get_pos()
+
 
 func _process(delta):
 	if !finished:
