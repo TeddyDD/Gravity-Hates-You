@@ -23,7 +23,7 @@ THE SOFTWARE.
 All graphics was made by my awesome girlfriend - [Katarzyna "Kyasarinn" Hojka"](http://kyasarinn.deviantart.com/) and are licensed under [Creative Commons Attribution-Noncommercial 3.0 License](https://creativecommons.org/licenses/by-nc/3.0/)
 
 # Music
-Music - [Reformat](http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1500020) by Kevin MacLeod
+Music - [Reformat](http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1500020) by Kevin MacLeod, licensed under [Creative Commons Attribution 3.0 License](http://creativecommons.org/licenses/by/3.0/)
 
 # Font
 I used [NES Cyrillic](http://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=234) font by xbost (Public Domain)
