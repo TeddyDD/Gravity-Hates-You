@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="4" version="2.0" version_name="Godot Engine v2.0.alpha.custom_build">
+	<ext_resource path="res://scenes/menu.gd" type="Script" index="0"></ext_resource>
 	<ext_resource path="res://fonts/NESCyrillic.fnt" type="Font" index="2"></ext_resource>
 	<ext_resource path="res://textures/Menu.png" type="Texture" index="1"></ext_resource>
-	<ext_resource path="res://scenes/menu.gd" type="Script" index="0"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>
@@ -282,7 +282,7 @@
 				<real> 576 </real>
 				<real> 100 </real>
 				<real> 592 </real>
-				<string> "v1.0.1" </string>
+				<string> "v1.0.2" </string>
 			</array>
 			<string> "version" </string>
 			<int> 1 </int>
