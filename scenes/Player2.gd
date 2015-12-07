@@ -20,7 +20,7 @@ func _fixed_process(delta):
 					force += (p.mass * 2 * (p.get_pos() - get_pos()) / distance * delta) * 0.5
 		velocity += force * 1000 * delta
 		var motion = velocity * delta
-		set_rot( force.atan2() )
+		set_rot( atan2(force.x, force.y) )
 		move( motion )  
 	
 		if (is_colliding()):
