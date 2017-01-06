@@ -57,4 +57,4 @@ func load_level_data():
 		file.save("user://save.bin")
 	for level in level_data:
 		prints( level.name )
-		level.time =  file.get_value( level.name, "time" )
+		level.time = file.get_value( level.name, "time" )
