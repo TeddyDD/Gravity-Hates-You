@@ -17,8 +17,9 @@ func _ready():
 	get_node("../Player").planets.append(self)
 	
 	#colors
-	var colors = load("res://colors/planet.res").get_colors()
-	set_modulate( colors[randi() % colors.size() ] )
+	if randi() % 2 == 1:
+		var colors = load("res://colors/planet.res").get_colors()
+		set_modulate( colors[randi() % colors.size() ] )
 	
 func get_scale_by_radius( radius ):
 	var factor = 160 / radius
